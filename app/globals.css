@@ -1,0 +1,62 @@
+@import url('https://use.typekit.net/ik/61-q0FawBJ10LE9c7WJXwmV6_eb6Y9YthFT-bCD9Fw6fentgfFHN4UJLFRbh52jhWD9t5QmqFR4qwRqoFeFy52ZKweFq5Q63FUGMJ6U3ScNt-AuyOAozicIKIcBqdh48OAiyScBldhoqOWgkdkG4f5J7IMMjMkMfH6qJn3IbMg6IJMJ7fbKlMsMMeMj6MKG4fJCgIMMjgkMfH6qJn6IbMg6bJMJ7fbKwMsMMegI6MKG4fVwXIMIjgfMfH6qJv2bbMs6YJMJ7fbRkFgMgeMt6MKG4fVIXIMIjIPMfqMYS7vPog6.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #3D9991;
+  --dark: #1F1F1F;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'proxima-nova', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-garamond {
+  font-family: 'adobe-garamond-pro', Georgia, serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Dropdown animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.2s ease-out forwards;
+}
